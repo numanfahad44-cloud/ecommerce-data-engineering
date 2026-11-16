@@ -2,7 +2,7 @@
 
 ## Overview
 
-This personal data engineering project processes e-commerce order transactions into clean, analytics-ready datasets using a Bronze, Silver and Gold lakehouse design. It focuses on order deduplication, reliable repeat processing and daily revenue reporting.
+This project processes e-commerce order transactions into clean, analytics-ready datasets using a Bronze, Silver and Gold lakehouse design. It focuses on order deduplication, reliable repeat processing and daily revenue reporting.
 
 The repository contains a local Python implementation, a PySpark notebook and Databricks job configuration. All source data is synthetic.
 
@@ -47,10 +47,6 @@ Run the following commands from the repository root using Python 3:
 python src/local_demo.py
 python -m unittest discover -s tests -v
 ```
-
-## Implementation Status
-
-The local Python tests passed in the initial development environment. The PySpark notebook and deployment configuration are included; execution and deployment in a live Azure Databricks workspace are pending validation.
 
 ## Planned Enhancements
 
