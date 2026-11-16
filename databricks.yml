@@ -1,0 +1,17 @@
+bundle:
+  name: ecommerce_lakehouse
+include:
+  - resources/*.yml
+variables:
+  input_path:
+    description: Workspace-accessible synthetic CSV path
+  cluster_id:
+    description: Existing permitted dev compute ID
+  catalog:
+    description: Development catalog
+  schema:
+    description: Dedicated development schema
+targets:
+  dev:
+    mode: development
+    default: true

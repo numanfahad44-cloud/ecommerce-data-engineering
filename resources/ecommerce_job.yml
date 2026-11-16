@@ -1,0 +1,13 @@
+resources:
+  jobs:
+    ecommerce_demo:
+      name: ecommerce_demo
+      tasks:
+        - task_key: medallion_orders
+          existing_cluster_id: ${var.cluster_id}
+          notebook_task:
+            notebook_path: ../notebooks/orders.py
+            base_parameters:
+              input_path: ${var.input_path}
+              catalog: ${var.catalog}
+              schema: ${var.schema}
